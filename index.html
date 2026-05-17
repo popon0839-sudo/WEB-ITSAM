@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRUPO ITSAM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background:#0b1120;
+  color:white;
+}
+
+/* HEADER */
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background: rgba(10,20,40,0.6);
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo-icon {
+  font-size:18px;
+  background: linear-gradient(135deg,#38bdf8,#0ea5e9);
+  padding:8px;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.logo-text strong {
+  font-size:16px;
+  letter-spacing:2px;
+  color:#38bdf8;
+}
+
+.logo-text small {
+  font-size:11px;
+  color:#94a3b8;
+}
+
+nav a {
+  margin-left:20px;
+  color:#cbd5f5;
+  text-decoration:none;
+}
+
+.nav-btn {
+  background:#38bdf8;
+  color:#0b1120;
+  padding:8px 14px;
+  border-radius:6px;
+}
+
+/* HERO */
+.hero {
+  min-height:95vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px 20px;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(56,189,248,0.25), transparent),
+    radial-gradient(circle at 80% 0%, rgba(14,165,233,0.2), transparent),
+    linear-gradient(135deg,#0b1120,#020617);
+}
+
+.hero-box {
+  max-width:750px;
+  padding:40px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+
+.hero h1 { font-size:2.6em; }
+
+.subtitle { color:#94a3b8; }
+
+.hero-buttons { margin-top:20px; }
+
+.btn {
+  background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+  padding:14px 26px;
+  border-radius:10px;
+  color:#0b1120;
+  text-decoration:none;
+  margin-right:10px;
+}
+
+.btn-outline {
+  border:2px solid #38bdf8;
+  color:#38bdf8;
+  padding:14px 26px;
+  border-radius:10px;
+  text-decoration:none;
+}
+
+/* SERVICIOS */
+section {
+  padding:80px 20px;
+  text-align:center;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 18px;
+  text-align: left;
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #38bdf8;
+}
+
+.card p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.card ul {
+  padding-left: 18px;
+}
+
+.card-btn {
+  display: inline-block;
+  margin-top:10px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: linear-gradient(135deg,#38bdf8,#0ea5e9);
+  color: #0b1120;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FORM */
+#registro h2 {
+  font-size:2em;
+  margin-bottom:30px;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  background: rgba(255,255,255,0.06);
+  padding: 35px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+input {
+  width: 100%;
+  padding: 14px 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background: rgba(255,255,255,0.9);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(135deg,#38bdf8,#0ea5e9);
+  color: #0b1120;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px;
+  border-radius:50%;
+  color:white;
+  text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  nav { display:none; }
+
+  .hero h1 { font-size:1.8em; }
+
+  .hero-box { padding:25px; }
+
+  .hero-buttons {
+    display:flex;
+    flex-direction:column;
+  }
+
+  .btn, .btn-outline {
+    width:100%;
+    margin:8px 0;
+  }
+
+  .cards {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <span class="logo-icon">IT</span>
+    <div class="logo-text">
+      <strong>GRUPO ITSAM</strong>
+      <small>Soluciones Tecnológicas</small>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#registro" class="nav-btn">Cotizar</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-box">
+    <h1>Impulsa tu empresa con tecnología confiable</h1>
+    <p class="subtitle">Soporte, sistemas, seguridad y servidores en un solo lugar</p>
+
+    <div class="hero-buttons">
+      <a href="#registro" class="btn">Cotizar</a>
+      <a href="#" onclick="abrirWhatsApp()" class="btn-outline">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section>
+<h2>Servicios</h2>
+
+<div class="cards">
+
+<div class="card">
+  <div class="icon">🛠️</div>
+  <h3>Soporte Técnico</h3>
+  <p>Mantenemos tus equipos funcionando sin interrupciones.</p>
+  <ul>
+    <li>Reparación inmediata</li>
+    <li>Soporte remoto</li>
+    <li>Mantenimiento</li>
+  </ul>
+  <a href="#" onclick="abrirWhatsApp()" class="card-btn">Solicitar</a>
+</div>
+
+<div class="card">
+  <div class="icon">💼</div>
+  <h3>Sistemas ASPel</h3>
+  <p>Control total de tu negocio.</p>
+  <ul>
+    <li>SAE · COI · NOI</li>
+    <li>Implementación</li>
+    <li>Capacitación</li>
+  </ul>
+  <a href="#" onclick="abrirWhatsApp()" class="card-btn">Solicitar</a>
+</div>
+
+<div class="card">
+  <div class="icon">💻</div>
+  <h3>Venta de Equipos</h3>
+  <p>Equipos listos para trabajar.</p>
+  <ul>
+    <li>Laptops</li>
+    <li>Servidores</li>
+    <li>Redes</li>
+  </ul>
+  <a href="#" onclick="abrirWhatsApp()" class="card-btn">Comprar</a>
+</div>
+
+<div class="card">
+  <div class="icon">☁️</div>
+  <h3>Servidores y Nube</h3>
+  <p>Acceso seguro desde cualquier lugar.</p>
+  <ul>
+    <li>Cloud</li>
+    <li>Respaldos</li>
+    <li>Seguridad</li>
+  </ul>
+  <a href="#" onclick="abrirWhatsApp()" class="card-btn">Contratar</a>
+</div>
+
+<div class="card">
+  <div class="icon">📹</div>
+  <h3>Cámaras de Seguridad</h3>
+  <p>Protección 24/7 para tu negocio.</p>
+  <ul>
+    <li>Instalación</li>
+    <li>Acceso remoto</li>
+    <li>Grabación</li>
+  </ul>
+  <a href="#" onclick="abrirWhatsApp()" class="card-btn">Cotizar</a>
+</div>
+
+</div>
+</section>
+
+<section id="registro">
+<h2>Contáctanos</h2>
+
+<div class="form-container">
+<form onsubmit="registrar(event)">
+<input id="nombre" placeholder="Nombre" required>
+<input id="telefono" placeholder="Teléfono" required>
+<input id="correo" type="email" placeholder="Correo electrónico" required>
+<button type="submit">Enviar</button>
+</form>
+</div>
+</section>
+
+<a href="#" onclick="abrirWhatsApp()" class="whatsapp">💬</a>
+
+<script>
+const numeroWhatsApp="5215534183159";
+
+function abrirWhatsApp(){
+  window.open(`https://wa.me/${numeroWhatsApp}`);
+}
+
+function registrar(e){
+  e.preventDefault();
+
+  const nombre=document.getElementById("nombre").value;
+  const telefono=document.getElementById("telefono").value;
+  const correo=document.getElementById("correo").value;
+
+  const mensaje=`Hola, soy ${nombre}.
+Teléfono: ${telefono}
+Correo: ${correo}
+Quiero información sobre sus servicios.`;
+
+  window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`);
+}
+</script>
+
+</body>
+</html>
