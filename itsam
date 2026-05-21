@@ -1,0 +1,1902 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GRUPO ITSAM | Soluciones Tecnológicas</title>
+
+<meta name="description"
+content="Grupo ITSAM - Soluciones tecnológicas, soporte técnico, servidores, nube, seguridad y sistemas empresariales.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+:root{
+--azul:#38bdf8;
+--azul2:#0ea5e9;
+--fondo:#07111f;
+--texto:#ffffff;
+--gris:#94a3b8;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(
+135deg,
+#07111f,
+#020617
+);
+
+color:var(--texto);
+
+overflow-x:hidden;
+
+}
+
+/* HEADER */
+
+.header{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(5,10,20,.65);
+
+backdrop-filter:blur(18px);
+
+z-index:999;
+
+}
+
+.logo{
+
+display:flex;
+
+gap:12px;
+
+align-items:center;
+
+}
+
+.logo-icon{
+
+width:48px;
+
+height:48px;
+
+border-radius:12px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-weight:800;
+
+background:
+
+linear-gradient(
+135deg,
+var(--azul),
+var(--azul2)
+);
+
+color:#001421;
+
+}
+
+.logo strong{
+
+display:block;
+
+color:var(--azul);
+
+}
+
+.logo small{
+
+color:var(--gris);
+
+}
+
+nav{
+
+display:flex;
+
+gap:18px;
+
+align-items:center;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+}
+
+.nav-btn{
+
+padding:10px 18px;
+
+border-radius:10px;
+
+background:
+
+linear-gradient(
+135deg,
+var(--azul),
+var(--azul2)
+);
+
+color:#001421;
+
+font-weight:700;
+
+}
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:120px 20px 60px;
+
+}
+
+.hero-box{
+
+max-width:900px;
+
+text-align:center;
+
+padding:60px;
+
+border-radius:30px;
+
+background:
+
+rgba(255,255,255,.04);
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.45);
+
+}
+
+.hero h1{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+font-size:1.15rem;
+
+color:var(--gris);
+
+}
+
+.hero-buttons{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:15px 30px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:700;
+
+}
+
+.primary{
+
+background:
+
+linear-gradient(
+135deg,
+var(--azul),
+var(--azul2)
+);
+
+color:#001421;
+
+}
+
+.outline{
+
+border:2px solid var(--azul);
+
+color:var(--azul);
+
+}
+
+/* GENERAL */
+
+section{
+
+padding:90px 8%;
+
+}
+
+h2{
+
+text-align:center;
+
+font-size:2.2rem;
+
+margin-bottom:45px;
+
+color:var(--azul);
+
+}
+
+/* CARDS */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(
+auto-fit,
+minmax(280px,1fr)
+);
+
+gap:25px;
+
+}
+
+.card{
+
+padding:30px;
+
+border-radius:20px;
+
+background:
+
+rgba(255,255,255,.05);
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:
+
+translateY(-8px);
+
+}
+
+.icon{
+
+font-size:34px;
+
+margin-bottom:15px;
+
+}
+
+.card h3{
+
+color:var(--azul);
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+color:var(--gris);
+
+}
+
+.card ul{
+
+margin-top:15px;
+
+padding-left:18px;
+
+color:#d9e4f1;
+
+}
+
+.card-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 18px;
+
+background:
+
+linear-gradient(
+135deg,
+var(--azul),
+var(--azul2)
+);
+
+color:#001421;
+
+text-decoration:none;
+
+border-radius:10px;
+
+font-weight:700;
+
+}
+
+/* NOSOTROS */
+
+.about{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+padding:40px;
+
+border-radius:20px;
+
+background:
+
+rgba(255,255,255,.04);
+
+}
+
+/* FORM */
+
+.form-container{
+
+max-width:650px;
+
+margin:auto;
+
+padding:35px;
+
+background:
+
+rgba(255,255,255,.05);
+
+border-radius:22px;
+
+}
+
+input{
+
+width:100%;
+
+padding:16px;
+
+margin:10px 0;
+
+border:none;
+
+border-radius:12px;
+
+}
+
+input:focus{
+
+outline:none;
+
+box-shadow:
+
+0 0 0 3px rgba(56,189,248,.3);
+
+}
+
+button{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-weight:700;
+
+background:
+
+linear-gradient(
+135deg,
+var(--azul),
+var(--azul2)
+);
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+background:#25D366;
+
+text-decoration:none;
+
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+color:var(--gris);
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.hero-box{
+
+padding:35px;
+
+}
+
+}
+
+/* VENTAJAS */
+
+#ventajas{
+
+padding:80px 20px;
+
+}
+
+.benefits{
+
+display:grid;
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(250px,1fr)
+);
+
+gap:25px;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+.benefit{
+
+background:
+rgba(255,255,255,.05);
+
+padding:30px;
+
+border-radius:20px;
+
+border:
+1px solid rgba(255,255,255,.08);
+
+text-align:center;
+
+transition:.35s;
+
+backdrop-filter:blur(12px);
+
+}
+
+.benefit:hover{
+
+transform:
+translateY(-8px);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.benefit-icon{
+
+width:70px;
+
+height:70px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+border-radius:18px;
+
+background:
+linear-gradient(
+135deg,
+#38bdf8,
+#0ea5e9
+);
+
+}
+
+.benefit h3{
+
+color:#38bdf8;
+
+margin-bottom:12px;
+
+}
+
+.benefit p{
+
+color:#94a3b8;
+
+line-height:1.7;
+
+}
+/* FOOTER */
+
+footer{
+
+padding:60px 8%;
+
+background:
+
+rgba(255,255,255,.03);
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(
+auto-fit,
+minmax(220px,1fr)
+);
+
+gap:40px;
+
+}
+
+.footer-grid h3{
+
+color:#38bdf8;
+
+margin-bottom:16px;
+
+}
+
+.footer-grid p{
+
+color:#94a3b8;
+
+margin:10px 0;
+
+line-height:1.7;
+
+}
+
+footer hr{
+
+margin:35px 0;
+
+border:none;
+
+height:1px;
+
+background:
+
+rgba(255,255,255,.08);
+
+}
+
+.footer-copy{
+
+text-align:center;
+
+color:#64748b;
+
+}
+
+/* TECNOLOGIAS PREMIUM */
+
+#tecnologias{
+padding:10px 8% 80px;
+text-align:center;
+overflow:hidden;
+}
+
+#tecnologias h2{
+font-size:3rem;
+margin-bottom:60px;
+background:linear-gradient(90deg,#38bdf8,#ffffff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:28px;
+max-width:1400px;
+margin:auto;
+align-items:stretch;
+}
+
+.tech-card{
+position:relative;
+width:100%;
+max-width:260px;
+height:280px;
+margin:auto;
+padding:35px 20px;
+border-radius:28px;
+background:linear-gradient(180deg,rgba(20,30,60,.95),rgba(10,15,35,.95));
+border:1px solid rgba(56,189,248,.25);
+transition:.35s;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+backdrop-filter:blur(14px);
+box-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+
+.tech-card::before{
+content:"";
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:90px;
+height:4px;
+border-radius:20px;
+background:#38bdf8;
+box-shadow:0 0 18px #38bdf8;
+}
+
+.tech-card:hover{
+transform:translateY(-10px);
+border-color:#38bdf8;
+box-shadow:0 20px 60px rgba(56,189,248,.18);
+}
+
+.tech-icon{
+font-size:62px;
+margin-bottom:25px;
+display:flex;
+justify-content:center;
+align-items:center;
+height:90px;
+}
+
+.tech-card h3{
+font-size:2rem;
+line-height:1.2;
+text-align:center;
+color:white;
+font-weight:700;
+}
+
+.tech-text{
+margin-top:90px;
+}
+
+.tech-text p{
+font-size:1.25rem;
+color:#dbeafe;
+}
+
+.tech-text strong{
+color:#38bdf8;
+}
+
+/* FAQ */
+
+.faq-container{
+max-width:900px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.faq-item{
+background:rgba(255,255,255,.05);
+border-radius:18px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.faq-question{
+width:100%;
+padding:22px;
+background:none;
+border:none;
+color:white;
+font-size:1rem;
+font-weight:600;
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+}
+
+.faq-answer{
+max-height:0;
+overflow:hidden;
+padding:0 22px;
+color:#94a3b8;
+transition:all .35s ease;
+}
+
+.faq-item.active .faq-answer{
+max-height:200px;
+padding:0 22px 22px;
+}
+
+/* ANIMACIONES */
+
+.card,
+.benefit,
+.tech-card,
+.hero-box,
+.form-container{
+animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero-box{
+padding:35px;
+}
+
+#tecnologias h2{
+font-size:2.1rem;
+margin-bottom:35px;
+}
+
+.tech-grid{
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+}
+
+.tech-card{
+max-width:100%;
+height:220px;
+padding:25px 15px;
+}
+
+.tech-icon{
+font-size:48px;
+height:70px;
+}
+
+.tech-card h3{
+font-size:1.35rem;
+}
+
+.tech-text{
+margin-top:55px;
+}
+
+.tech-text p{
+font-size:1rem;
+}
+
+}
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:22px;
+margin-top:30px;
+text-align:left;
+}
+
+.about-card{
+padding:25px;
+border-radius:18px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+transition:.3s;
+}
+
+.about-card:hover{
+transform:translateY(-6px);
+border-color:rgba(56,189,248,.4);
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+.about-card h3{
+color:#38bdf8;
+margin-bottom:12px;
+}
+
+.about-card p{
+color:#cbd5e1;
+line-height:1.7;
+}
+
+.aspel-toggle{
+margin-top:18px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:rgba(56,189,248,.15);
+color:#38bdf8;
+font-weight:700;
+cursor:pointer;
+border:1px solid rgba(56,189,248,.35);
+transition:.3s;
+}
+
+.aspel-toggle:hover{
+background:rgba(56,189,248,.25);
+transform:translateY(-2px);
+}
+
+.aspel-lista{
+display:none;
+margin-top:18px;
+padding:18px;
+border-radius:16px;
+background:rgba(0,0,0,.22);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.aspel-lista.activo{
+display:block;
+}
+
+.aspel-item{
+padding:14px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.aspel-item:last-child{
+border-bottom:none;
+}
+
+.aspel-item h4{
+color:#38bdf8;
+margin-bottom:6px;
+}
+
+.aspel-item p{
+color:#cbd5e1;
+line-height:1.6;
+font-size:.95rem;
+}
+
+
+/* CONTACTO PREMIUM */
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:35px;
+max-width:1200px;
+margin:auto;
+align-items:stretch;
+}
+
+.contact-info{
+padding:35px;
+border-radius:24px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(14px);
+}
+
+.contact-info h3{
+color:#38bdf8;
+font-size:1.7rem;
+margin-bottom:15px;
+}
+
+.contact-info > p{
+color:#94a3b8;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.contact-item{
+display:flex;
+gap:15px;
+align-items:flex-start;
+padding:16px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.contact-item:last-child{
+border-bottom:none;
+}
+
+.contact-item span{
+font-size:26px;
+}
+
+.contact-item strong{
+color:white;
+}
+
+.contact-item p{
+color:#94a3b8;
+margin-top:5px;
+}
+
+select,
+textarea{
+width:100%;
+padding:16px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+font-family:'Poppins',sans-serif;
+box-sizing:border-box;
+}
+
+textarea{
+resize:none;
+}
+
+select:focus,
+textarea:focus{
+outline:none;
+box-shadow:0 0 0 3px rgba(56,189,248,.3);
+}
+
+@media(max-width:768px){
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+
+<div class="logo-icon">
+IT
+</div>
+
+<div>
+
+<strong>GRUPO ITSAM</strong>
+
+<small>
+Soluciones Tecnológicas
+</small>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="#inicio">
+Inicio
+</a>
+
+<a href="#servicios">
+Servicios
+</a>
+
+<a href="#registro"
+class="nav-btn">
+Cotizar
+</a>
+
+</nav>
+
+</header>
+
+<section
+id="inicio"
+class="hero">
+
+<div class="hero-box">
+
+<h1>
+
+Impulsa tu empresa con tecnología confiable
+
+</h1>
+
+<p class="subtitle">
+
+Soporte técnico, servidores,
+seguridad, nube y soluciones
+empresariales.
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#registro"
+class="btn primary">
+
+Cotizar
+
+</a>
+
+<a
+href="javascript:void(0)"
+onclick="abrirWhatsApp()"
+class="btn outline">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="servicios">
+
+<h2>
+
+Nuestros Servicios
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">🛠️</div>
+
+<h3>Soporte Técnico</h3>
+
+<p>Equipos funcionando sin interrupciones.</p>
+
+<ul>
+<li>Soporte remoto</li>
+<li>Mantenimiento preventivo</li>
+<li>Mantenimiento correctivo</li>
+<li>Instalación de software</li>
+<li>Optimización de equipos</li>
+<li>Respaldo de información</li>
+</ul>
+
+<a
+href="javascript:void(0)"
+onclick="abrirWhatsApp()"
+class="card-btn">
+
+Solicitar
+
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+💼
+</div>
+
+<h3>
+Sistemas ASPEL
+</h3>
+
+<p>
+
+Implementación, soporte, configuración,
+capacitación y optimización de sistemas
+administrativos y contables.
+
+</p>
+
+<ul>
+
+<li>ASPEL SAE — Administración empresarial</li>
+
+<li>ASPEL COI — Contabilidad</li>
+
+<li>ASPEL NOI — Nómina</li>
+
+<li>ASPEL BANCO — Tesorería</li>
+
+<li>ASPEL CAJA — Punto de venta</li>
+
+<li>ASPEL PROD — Producción</li>
+
+<li>ASPEL FACTURE — Facturación electrónica</li>
+
+<li>Instalación y migración</li>
+
+<li>Respaldos y soporte remoto</li>
+
+</ul>
+
+<button
+type="button"
+class="aspel-toggle"
+onclick="toggleAspel()">
+
+Ver sistemas ASPEL
+
+</button>
+
+<div
+id="aspel-lista"
+class="aspel-lista">
+
+<div class="aspel-item">
+<h4>ASPEL SAE</h4>
+<p>Control administrativo empresarial, clientes, inventarios, ventas, compras y facturación.</p>
+</div>
+
+<div class="aspel-item">
+<h4>ASPEL COI</h4>
+<p>Contabilidad integral, pólizas, estados financieros, impuestos y reportes contables.</p>
+</div>
+
+<div class="aspel-item">
+<h4>ASPEL NOI</h4>
+<p>Administración de nómina, recibos, IMSS, INFONAVIT, ISR y pagos a trabajadores.</p>
+</div>
+
+<div class="aspel-item">
+<h4>ASPEL BANCO</h4>
+<p>Control bancario, movimientos, cuentas, conciliaciones y flujo de efectivo.</p>
+</div>
+
+<div class="aspel-item">
+<h4>ASPEL CAJA</h4>
+<p>Punto de venta, tickets, cortes de caja, inventario y ventas de mostrador.</p>
+</div>
+
+<div class="aspel-item">
+<h4>ASPEL FACTURE</h4>
+<p>Facturación electrónica, CFDI, complementos, notas de crédito y recibos de honorarios.</p>
+</div>
+
+</div>
+
+<a
+href="javascript:void(0)"
+onclick="abrirWhatsApp()"
+class="card-btn">
+
+Solicitar Asesoría
+
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>Venta de Equipos</h3>
+
+<p>Equipamiento profesional.</p>
+
+<ul>
+<li>Laptops</li>
+<li>PC empresariales</li>
+<li>Servidores</li>
+<li>Redes</li>
+<li>Accesorios</li>
+<li>Configuración inicial</li>
+</ul>
+
+<a
+href="javascript:void(0)"
+onclick="abrirWhatsApp()"
+class="card-btn">
+
+Comprar
+
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">☁️</div>
+
+<h3>Servidores y Nube</h3>
+
+<p>Infraestructura moderna.</p>
+
+<ul>
+<li>Microsoft Cloud</li>
+<li>Respaldos automáticos</li>
+<li>Virtualización</li>
+<li>Acceso remoto</li>
+<li>Seguridad</li>
+<li>Monitoreo</li>
+</ul>
+
+<a
+href="javascript:void(0)"
+onclick="abrirWhatsApp()"
+class="card-btn">
+
+Contratar
+
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="icon">📹</div>
+
+<h3>Cámaras</h3>
+
+<p>Protección empresarial.</p>
+
+<ul>
+<li>Instalación</li>
+<li>Monitoreo remoto</li>
+<li>Grabación continua</li>
+<li>Configuración móvil</li>
+<li>Respaldo</li>
+<li>Mantenimiento</li>
+</ul>
+
+<a
+href="javascript:void(0)"
+onclick="abrirWhatsApp()"
+class="card-btn">
+
+Cotizar
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tecnologias">
+
+<h2>
+Tecnologías que Trabajamos
+</h2>
+
+<div class="tech-grid">
+
+<div class="tech-card"><div class="tech-icon">🪟</div><h3>Windows Server</h3></div>
+<div class="tech-card"><div class="tech-icon">🐧</div><h3>Linux</h3></div>
+<div class="tech-card"><div class="tech-icon">📘</div><h3>Microsoft 365</h3></div>
+<div class="tech-card"><div class="tech-icon">💼</div><h3>ASPel</h3></div>
+<div class="tech-card"><div class="tech-icon">🖥️</div><h3>Virtualización</h3></div>
+<div class="tech-card"><div class="tech-icon">☁️</div><h3>Cloud</h3></div>
+<div class="tech-card"><div class="tech-icon">🌐</div><h3>Redes</h3></div>
+<div class="tech-card"><div class="tech-icon">📹</div><h3>CCTV</h3></div>
+<div class="tech-card"><div class="tech-icon">💾</div><h3>Respaldos</h3></div>
+<div class="tech-card"><div class="tech-icon">🎧</div><h3>Soporte Remoto</h3></div>
+
+</div>
+
+<div class="tech-text">
+
+<p>
+Utilizamos tecnologías modernas para ofrecer soluciones
+<strong>seguras</strong>,
+<strong>eficientes</strong>
+y
+<strong>confiables</strong>.
+</p>
+
+</div>
+
+</section>
+
+<section id="ventajas">
+
+<h2>
+¿Por qué elegir GRUPO ITSAM?
+</h2>
+
+<div class="benefits">
+
+<div class="benefit"><div class="benefit-icon">⚡</div><h3>Respuesta Rápida</h3><p>Atención rápida para mantener tu operación funcionando sin interrupciones.</p></div>
+<div class="benefit"><div class="benefit-icon">🛡️</div><h3>Seguridad y Confianza</h3><p>Infraestructura y soluciones enfocadas en estabilidad y protección.</p></div>
+<div class="benefit"><div class="benefit-icon">📈</div><h3>Soluciones Escalables</h3><p>Tecnología preparada para crecer junto con tu empresa.</p></div>
+<div class="benefit"><div class="benefit-icon">🤝</div><h3>Atención Empresarial</h3><p>Acompañamiento técnico y soporte especializado.</p></div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+¿Quiénes Somos?
+
+</h2>
+
+<div class="about">
+
+<p>
+En GRUPO ITSAM desarrollamos soluciones tecnológicas para empresas y negocios.
+Ofrecemos soporte, infraestructura, servidores, seguridad y acompañamiento tecnológico.
+</p>
+
+<div class="about-grid">
+
+<div class="about-card">
+
+<h3>Misión</h3>
+
+<p>
+Generar satisfacción de servicio y modernización tecnológica a nuestros clientes en software y hardware a nivel PyMES.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Visión</h3>
+
+<p>
+Ser una empresa líder a nivel nacional en la comercialización de tecnología en software administrativo.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Filosofía</h3>
+
+<p>
+Compromiso de excelencia en servicio al cliente a través de nuestro equipo profesional de trabajo, cumpliendo con entusiasmo cada uno de los valores.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Valores</h3>
+
+<p>
+Servicio, calidad, confianza, honestidad, lealtad, responsabilidad, cooperación, tolerancia, respeto, armonía y calidad humana.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="registro">
+
+<h2>
+
+Contáctanos
+
+</h2>
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<h3>
+Hablemos de tu proyecto
+</h3>
+
+<p>
+Cuéntanos qué necesita tu empresa y te ayudaremos con una solución tecnológica adecuada.
+</p>
+
+<div class="contact-item">
+<span>📞</span>
+<div>
+<strong>Teléfono / WhatsApp</strong>
+<p>+52 55 3418 3159</p>
+</div>
+</div>
+
+<div class="contact-item">
+<span>✉️</span>
+<div>
+<strong>Correo</strong>
+<p>contacto@grupoitsam.com</p>
+</div>
+</div>
+
+<div class="contact-item">
+<span>📍</span>
+<div>
+<strong>Ubicación</strong>
+<p>Ciudad de México</p>
+</div>
+</div>
+
+<div class="contact-item">
+<span>🕘</span>
+<div>
+<strong>Horario</strong>
+<p>Lunes a Viernes · 09:00 - 18:00</p>
+</div>
+</div>
+
+</div>
+
+<div class="form-container">
+
+<form onsubmit="registrar(event)">
+
+<input
+id="nombre"
+placeholder="Nombre completo"
+required>
+
+<input
+id="telefono"
+type="tel"
+placeholder="Teléfono"
+maxlength="10"
+required>
+
+<input
+id="correo"
+type="email"
+placeholder="Correo electrónico"
+required>
+
+<select id="servicio" required>
+
+<option value="">
+Servicio de interés
+</option>
+
+<option value="Soporte Técnico">
+Soporte Técnico
+</option>
+
+<option value="Sistemas ASPEL">
+Sistemas ASPEL
+</option>
+
+<option value="Servidores y Nube">
+Servidores y Nube
+</option>
+
+<option value="Cámaras de Seguridad">
+Cámaras de Seguridad
+</option>
+
+<option value="Venta de Equipos">
+Venta de Equipos
+</option>
+
+</select>
+
+<textarea
+id="comentarios"
+placeholder="Cuéntanos brevemente qué necesitas"
+rows="5"></textarea>
+
+<button>
+Enviar solicitud
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<a
+class="whatsapp"
+href="javascript:void(0)"
+onclick="abrirWhatsApp()">
+
+💬
+
+</a>
+<section id="faq">
+
+<h2>
+Preguntas Frecuentes
+</h2>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+¿Atienden soporte remoto?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Sí, dependiendo del servicio podemos brindar atención remota.
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+¿Instalan servidores?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Sí, realizamos implementación, configuración y mantenimiento.
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+¿Trabajan con empresas?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Sí, ofrecemos soluciones empresariales y soporte especializado.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>
+GRUPO ITSAM
+</h3>
+
+<p>
+
+Soluciones tecnológicas para empresas:
+soporte, servidores, seguridad,
+infraestructura y sistemas.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+Servicios
+</h3>
+
+<p>Soporte Técnico</p>
+
+<p>Sistemas ASPEL</p>
+
+<p>Servidores y Nube</p>
+
+<p>Cámaras</p>
+
+</div>
+
+<div>
+
+<h3>
+Contacto
+</h3>
+
+<p>
+📞 +52 55 3418 3159
+</p>
+
+<p>
+✉ contacto@grupoitsam.com
+</p>
+
+<p>
+📍 Ciudad de México
+</p>
+
+</div>
+
+<div>
+
+<h3>
+Atención
+</h3>
+
+<p>
+Lunes a Viernes
+</p>
+
+<p>
+09:00 – 18:00
+</p>
+
+<p>
+Respuesta vía WhatsApp
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="footer-copy">
+
+© 2026 GRUPO ITSAM · Todos los derechos reservados
+
+</p>
+
+</footer>
+
+<script>
+
+const numeroWhatsApp="5215534183159";
+
+function abrirWhatsApp(){
+
+window.open(
+
+`https://wa.me/${numeroWhatsApp}`,
+
+"_blank"
+
+);
+
+}
+
+function registrar(e){
+
+e.preventDefault();
+
+let nombre=
+document.getElementById(
+"nombre"
+).value;
+
+let tel=
+document.getElementById(
+"telefono"
+).value;
+
+let correo=
+document.getElementById(
+"correo"
+).value;
+
+let servicio=
+document.getElementById(
+"servicio"
+).value;
+
+let comentarios=
+document.getElementById(
+"comentarios"
+).value;
+
+let mensaje=
+
+`Hola,
+soy ${nombre}
+
+Teléfono:
+${tel}
+
+Correo:
+${correo}
+
+Servicio de interés:
+${servicio}
+
+Comentarios:
+${comentarios}
+
+Quiero información
+sobre sus servicios.`;
+
+window.open(
+
+`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`,
+
+"_blank"
+
+);
+
+}
+
+function toggleAspel(){
+
+const lista =
+document.getElementById("aspel-lista");
+
+lista.classList.toggle("activo");
+
+}
+
+const faqItems =
+document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item=>{
+
+const button =
+item.querySelector(".faq-question");
+
+button.addEventListener("click",()=>{
+
+item.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
